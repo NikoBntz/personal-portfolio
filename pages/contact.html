@@ -5,55 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NikoBntz Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 
-<!--?  _   _                _            -->
-<!--? | | | | ___  __ _  __| | ___ _ __  -->
-<!--? | |_| |/ _ \/ _` |/ _` |/ _ \ '__| -->
-<!--? |  _  |  __/ (_| | (_| |  __/ |    -->
-<!--? |_| |_|\___|\__,_|\__,_|\___|_|    -->
-<header>
-    <h1 id="header_title">Nb.</h1>
-    <a class="titles" href="../index.html">Home</a>
-    <a class="titles" href="./about_me.html">About me</a>
-    <a class="titles" href="./contact.html">Contact</a>
-    <a class="titles" href="./projects.html">Projects</a>
-</header>
-
-<!--?  ____            _        -->
-<!--? | __ )  ___   __| |_   _  -->
-<!--? |  _ \ / _ \ / _` | | | | -->
-<!--? | |_) | (_) | (_| | |_| | -->
-<!--? |____/ \___/ \__,_|\__, | -->
-<!--?                    |___/  -->
 
 <body>
-    <h1>Contact me</h1>
-    <!--! Change everything, this is just a template -->
-    <form action="/my-handling-form-page" method="post">
-        <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
-        </p>
-        <p>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" />
-        </p>
-        <p>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </p>
-    </form>
-</body>
+    <!--?  _   _                _            -->
+    <!--? | | | | ___  __ _  __| | ___ _ __  -->
+    <!--? | |_| |/ _ \/ _` |/ _` |/ _ \ '__| -->
+    <!--? |  _  |  __/ (_| | (_| |  __/ |    -->
+    <!--? |_| |_|\___|\__,_|\__,_|\___|_|    -->
+    <header class="header">
+        <h1 id="header-title">Nb.</h1>
+        <a class="header-buttons" href="../index.html">Home</a>
+        <a class="header-buttons" href="./about_me.html">About me</a>
+        <a class="header-buttons" href="./contact.html">Contact</a>
+        <a class="header-buttons" href="./projects.html">Projects</a>
+    </header>
 
-<!--?  _____           _             -->
-<!--? |  ___|__   ___ | |_ ___ _ __  -->
-<!--? | |_ / _ \ / _ \| __/ _ \ '__| -->
-<!--? |  _| (_) | (_) | ||  __/ |    -->
-<!--? |_|  \___/ \___/ \__\___|_|    -->
-<footer>
-    <p>Designed and Developed by Niko Benitez</p>
-    <p>Copyright [icon] [year] NB</p>
-</footer>
+    <!--?  ____            _        -->
+    <!--? | __ )  ___   __| |_   _  -->
+    <!--? |  _ \ / _ \ / _` | | | | -->
+    <!--? | |_) | (_) | (_| | |_| | -->
+    <!--? |____/ \___/ \__,_|\__, | -->
+    <!--?                    |___/  -->
+
+    <h1 class="section-title">Contact me</h1>
+    <!--! Functional form: opens email app on submit -->
+    <!--! Replace you@email.com with your real email -->
+    <form class="contact-form panel" action="mailto:you@email.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required minlength="2" placeholder="Your name">
+        </div>
+        <div class="form-group">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message" required minlength="10" rows="5"
+                placeholder="Write your message..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send ➜</button>
+    </form>
+
+    <section class="social">
+        <h1 class="section-title">Social media</h1>
+        <div class="skills">
+            <a class="skill" href="https://github.com/NikoBntz" target="_blank">
+                <img class="img"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
+                <p class="paragraph">GitHub</p>
+            </a>
+            <a class="skill" href="https://www.linkedin.com/in/niko-benítez-vitriago-1373193b7" target="_blank">
+                <img class="img"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg">
+                <p class="paragraph">LinkedIn</p>
+            </a>
+        </div>
+    </section>
+
+    <!--?  _____           _             -->
+    <!--? |  ___|__   ___ | |_ ___ _ __  -->
+    <!--? | |_ / _ \ / _ \| __/ _ \ '__| -->
+    <!--? |  _| (_) | (_) | ||  __/ |    -->
+    <!--? |_|  \___/ \___/ \__\___|_|    -->
+    <footer>
+        <p>Designed and Developed by Niko Benitez</p>
+        <p>© 2026 NB</p>
+    </footer>
+
+</body>
 
 </html>
