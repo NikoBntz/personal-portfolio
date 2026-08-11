@@ -308,3 +308,79 @@ footer {
 .project-card:hover .card-footer {
   color: var(--accent-color);
 }
+
+/*! RESPONSIVE — rules below only apply on screens ≤600px wide (phones) */
+@media (max-width: 600px) {
+  /* Less padding around the edges = more room for content */
+  body {
+    padding: 12px;
+  }
+
+  /* Wrap the nav buttons and center them + add air between rows */
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+
+  /* Bigger touch targets (Apple recommends ≥44px) */
+  .header-buttons {
+    padding: 12px;
+  }
+
+  /* Stack the hero image under the text instead of side-by-side */
+  #first-impression {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-md);
+  }
+
+  .intro-text {
+    align-items: center; /* center the text when it's on top */
+  }
+
+  /* Shrink the big margins/padding so sections don't eat the whole screen */
+  .section-title {
+    margin: var(--spacing-sm);
+  }
+
+  section {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .card {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  /* Tighter form so inputs reach the edges */
+  .contact-form {
+    width: 100%;
+    padding: var(--spacing-md);
+  }
+
+  /* Single column of projects feels roomier than a squeezed grid */
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  /* Center the skill tiles (skillset + social media rows) */
+  .skills {
+    justify-content: center;
+  }
+
+  /* Stack the "Introduction" title on top, text below */
+  #introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Slightly smaller headings so long titles don't overflow */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
