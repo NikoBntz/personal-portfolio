@@ -43,14 +43,6 @@ body {
   margin: 0 auto;
 }
 
-.section-title {
-  padding: var(--spacing-sm);
-  margin: var(--spacing-md);
-  color: var(--accent-color);
-  line-height: 1.3;
-}
-
-/* Shared "panel" look. Add class="panel" to reuse — no copy-paste. */
 .panel {
   background-color: var(--primary-color);
   border: 3px solid var(--secondary-color);
@@ -58,7 +50,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Every panel reacts on hover, like the project cards. */
 .panel:hover {
   border-color: var(--accent-color);
 }
@@ -73,8 +64,8 @@ body {
 }
 
 .paragraph {
-  padding: var(--spacing-sm);
-  line-height: 1.6;
+  padding: var(--spacing-md);
+  line-height: var(--spacing-lg);
 }
 
 h1 {
