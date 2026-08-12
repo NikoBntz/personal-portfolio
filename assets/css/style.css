@@ -112,12 +112,17 @@ footer {
 /* Header */
 .header {
   background-color: var(--background-light);
-  border: 1px solid var(--secondary-color);
+  border: 3px solid var(--secondary-color);
   padding: var(--spacing-sm);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--spacing-lg);
+  transition: all 0.3s ease;
+}
+
+.header:hover {
+  border-color: var(--accent-color);
 }
 
 #header-title {
