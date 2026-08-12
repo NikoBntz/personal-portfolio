@@ -1,0 +1,21 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Custom non-project directory
+.remember/
+
+# Node.js (if you ever add it)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files
+.env*
