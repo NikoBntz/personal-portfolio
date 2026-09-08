@@ -89,7 +89,6 @@ body {
 }
 
 h1 {
-  /*TODO Add a standarized size for this, an XL */
   font-size: 2.2rem;
   font-weight: 700;
 }
@@ -290,6 +289,42 @@ footer {
   color: var(--accent-color);
 }
 
+/*! Hamburger Menu */
+.hamburger-btn {
+  display: none;
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--accent-color);
+  font-size: var(--font-size-large);
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.hamburger-btn:hover {
+  border-color: var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
 /*! PHONES SECTION */
 @media (max-width: 600px) {
   body {
@@ -357,5 +392,22 @@ footer {
   .media-img {
     width: 180px;
     height: 180px;
+  }
+
+  /* Hamburger Menu */
+  .hamburger-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-top: var(--spacing-sm);
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }
